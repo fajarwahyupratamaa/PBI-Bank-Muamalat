@@ -1,0 +1,15 @@
+SELECT
+Orders.Date AS order_date,
+ProductCategory.CategoryName as category_name,
+Products1.ProdName AS product_name,
+Products1.Price AS product_price,
+Orders.Quantity AS order_qty,
+ROUND((Products1.Price * Orders.Quantity),2) as total_sales,
+Customers.CustomerEmail AS cust_email,
+Customers.CustomerCity AS cust_city,
+FROM
+pbi-project-muamalat.PBI_project_muamalat.Customers
+JOIN pbi-project-muamalat.PBI_project_muamalat.Orders Orders ON Customers.CustomerID = Orders.CustomerID
+JOIN pbi-project-muamalat.PBI_project_muamalat.Products1 Products1 ON Products1.ProdNumber = Orders.ProdNumber
+JOIN pbi-project-muamalat.PBI_project_muamalat.ProductCategory ProductCategory ON ProductCategory.CategoryID = Products1.Category
+ORDER BY 1,5 ASC
