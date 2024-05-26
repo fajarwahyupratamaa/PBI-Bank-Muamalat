@@ -8,3 +8,4 @@ Tools used to assist in completing this final task:
 I was tasked with processing data from the 4 raw data provided, then creating dashboards from the raw data provided and making decisions and suggestions to increase business sales.
 
 Data source: https://drive.google.com/file/d/1RwsBQ1FriNfz6qiq0V5nD7gF7jO81To3/view?usp=sharing
+Public Looker Studio: https://lookerstudio.google.com/s/qUClxI3uj-M
